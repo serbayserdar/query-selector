@@ -10,6 +10,11 @@
     justify-content: center;
     padding: 20px;
     margin: 200px auto;
+    width: 600px;
+}
+
+.blue-bg{
+    background-color: blueviolet;
 }
 
 img{
@@ -17,6 +22,19 @@ img{
     height: 400px;
 }
 
+.better-img{
+    border-radius: 16px;
+}
+
 button{
     cursor: pointer;
+}
+
+.better-buttons{
+    background-color: orange;
+    color: white;
+    padding: 8px 16px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 8px;
 }

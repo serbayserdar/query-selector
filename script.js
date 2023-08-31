@@ -20,3 +20,36 @@ const changeImage=()=>{
 }
 
 changeImage();
+
+const addBgColor=()=>{
+    const container = document.querySelector(".container")
+    container.classList.toggle("blue-bg")
+
+    const buttonBg = document.querySelector(".bg-button")
+
+    if(buttonBg.innerText === 'Add Bg'){
+        buttonBg.innerText = 'Remove Bg'
+    }else{
+        buttonBg.innerText = 'Add Bg'
+    }
+}
+
+
+const toggleStyle=()=>{
+    const image = document.querySelector('img');
+    image.classList.toggle('better-img')
+
+    const allButtons = document.querySelectorAll('button')
+    
+    for(let i = 0; i < allButtons.length; i++){
+        allButtons[i].classList.toggle('better-buttons')
+    }
+
+    const buttonStyle = document.querySelector(".style-button")
+
+    if(buttonStyle.innerText === 'Switch to Better Style'){
+        buttonStyle.innerText = 'Basic Style'
+    }else{
+        buttonStyle.innerText = 'Switch to Better Style'
+    }
+}
